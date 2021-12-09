@@ -1,5 +1,5 @@
 on: 
-   push:
+   clone:
      branches: [ main ]
 name: Deploying WordPress Site
 jobs:
