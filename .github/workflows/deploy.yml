@@ -1,0 +1,12 @@
+on: push
+name: Deploying WordPress Site
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy
+      uses: rtCamp/action-deploy-wordpress@v2
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
