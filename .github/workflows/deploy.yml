@@ -1,7 +1,7 @@
 name: Wordpress CD
 
 on: push
-  branches:[ main ]
+  branch:[ main ]
   
 jobs:
   build:
