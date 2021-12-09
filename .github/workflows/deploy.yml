@@ -1,8 +1,9 @@
-name: Wordpress CD
-
 on: push
-  branch:[ main ]
-  
+name: Deploying WordPress Site
 jobs:
-  build:
+  deploy:
+    name: Deploy
     runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy
