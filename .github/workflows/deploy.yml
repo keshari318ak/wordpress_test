@@ -7,5 +7,5 @@ jobs:
     name: wordpress_test
     runs-on: self-hosted
     steps:
-    - uses: actions/checkout@v2
-    - name: wordpress_test
+    - uses: actions/deploy@v2
+    - name: deploy
