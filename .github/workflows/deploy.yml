@@ -7,6 +7,6 @@ jobs:
     name: wordpress_test
     runs-on: self-hosted
     steps:
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v2
     - name: wordpress_test
       uses: rtCamp/action-deploy-wordpress@v2
