@@ -1,5 +1,5 @@
 on: 
-   pull:
+   push:
      branches: [ main ]
 name: Deploying WordPress Site
 jobs:
@@ -8,5 +8,6 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@main
-    - name: Deploy
+    - name: wordpress_test
       uses: rtCamp/action-deploy-wordpress@v2
+    - name: Run build  
