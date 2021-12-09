@@ -10,4 +10,3 @@ jobs:
     - uses: actions/checkout@main
     - name: wordpress_test
       uses: rtCamp/action-deploy-wordpress@v2
-    - name: Run build  
