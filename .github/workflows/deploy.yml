@@ -9,3 +9,4 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: Deploy
+      uses: rtCamp/action-deploy-wordpress@v2
