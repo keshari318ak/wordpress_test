@@ -1,9 +1,11 @@
-on: push
+on: 
+   push:
+     branches: [ main ]
 name: Deploying WordPress Site
 jobs:
-  deploy:
-    name: Deploy
+  build:
+    name: wordpress_test
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
-    - name: Deploy
+    - name: wordpress_test
