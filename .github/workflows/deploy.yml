@@ -5,7 +5,7 @@ on:
   pull_requests:
     branches: [ main ]
 
-name: Deploying WordPress Site
+#name: Deploying WordPress Site
 jobs:
   deploy:
     name: Deploy
