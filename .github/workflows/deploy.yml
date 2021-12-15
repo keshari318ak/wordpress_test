@@ -1,4 +1,10 @@
-on: push
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_requests:
+    branches: [ main ]
+
 name: Deploying WordPress Site
 jobs:
   deploy:
