@@ -1,0 +1,178 @@
+# Copyright (C) 2015-2021 WEN Themes
+# This file is distributed under the GNU General Public License, version 3 (GPLv3).
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WEN Travel Modern\n"
+"Report-Msgid-Bugs-To: https://wenthemes.com/contact/\n"
+"POT-Creation-Date: 2021-12-09 16:13-0800\n"
+"PO-Revision-Date: 2016-12-07 01:05-0500\n"
+"Last-Translator: WEN Themes <info@wenthemes.com>\n"
+"Language-Team: WEN Themes <info@wenthemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_html_e;esc_html__;esc_attr_e;esc_attr__;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: \n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../functions.php:40
+msgid "Top Social"
+msgstr ""
+
+#: ../inc/customizer/collection.php:16
+msgid "Collection"
+msgstr ""
+
+#: ../inc/customizer/collection.php:25 ../inc/customizer/logo-slider.php:25
+#: ../inc/customizer/special-offer.php:25
+msgid "Enable on"
+msgstr ""
+
+#: ../inc/customizer/collection.php:35 ../inc/customizer/logo-slider.php:45
+msgid "Title"
+msgstr ""
+
+#: ../inc/customizer/collection.php:45 ../inc/customizer/logo-slider.php:55
+msgid "Description"
+msgstr ""
+
+#: ../inc/customizer/collection.php:56
+msgid "Number of items to show"
+msgstr ""
+
+#: ../inc/customizer/collection.php:73 ../inc/customizer/logo-slider.php:88
+#: ../inc/customizer/special-offer.php:36 ../template-parts/special-offer/post-type-special.php:92
+msgid "Page"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:16
+msgid "Header Top Options"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:22
+msgid "Header Top"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:33
+msgid "Social Menu on Left"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:44
+#, php-format
+msgid "For Top Social Menu, go %1$shere%2$s"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:57
+msgid "Display Date"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:67
+msgid "Link Text"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:68 ../template-parts/header-top/contact-details-top.php:9
+#: ../template-parts/header-top/site-top-bar.php:15
+msgid "My Account"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:78
+msgid "Link url"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:87
+msgid "Open Link in New Window/Tab"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:97
+msgid "Phone"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:107
+msgid "Email"
+msgstr ""
+
+#: ../inc/customizer/header-top.php:117
+msgid "Address"
+msgstr ""
+
+#: ../inc/customizer/logo-slider.php:16
+msgid "Logo Slider"
+msgstr ""
+
+#: ../inc/customizer/logo-slider.php:35
+msgid "Subtitle"
+msgstr ""
+
+#: ../inc/customizer/logo-slider.php:67
+msgid "Save and refresh the page if No. of Items is changed (Max no of slides is 20)"
+msgstr ""
+
+#: ../inc/customizer/logo-slider.php:74
+msgid "No of Items"
+msgstr ""
+
+#: ../inc/customizer/special-offer.php:15
+msgid "Special Offer"
+msgstr ""
+
+#: ../inc/customizer/special-offer.php:46
+msgid "Offer Number (Percent)"
+msgstr ""
+
+#: ../inc/customizer/special-offer.php:61
+msgid "Offer Text"
+msgstr ""
+
+#: ../inc/customizer/special-offer.php:72
+msgid "Offer Text Background Image"
+msgstr ""
+
+#: ../template-parts/header-top/site-top-bar.php:34
+msgid "Top Bar"
+msgstr ""
+
+#: ../template-parts/navigation/navigation-primary-style-two.php:14
+#: ../template-parts/navigation/navigation-primary-style-two.php:134
+#: ../template-parts/navigation/navigation-primary-style-two.php:221
+msgid "Menu"
+msgstr ""
+
+#: ../template-parts/navigation/navigation-primary-style-two.php:26
+#: ../template-parts/navigation/navigation-primary-style-two.php:39
+#: ../template-parts/navigation/navigation-primary-style-two.php:146
+#: ../template-parts/navigation/navigation-primary-style-two.php:159
+#: ../template-parts/navigation/navigation-primary-style-two.php:233
+#: ../template-parts/navigation/navigation-primary-style-two.php:246
+msgid "Primary Menu"
+msgstr ""
+
+#: ../template-parts/navigation/navigation-primary-style-two.php:77
+#: ../template-parts/navigation/navigation-primary-style-two.php:106
+#: ../template-parts/navigation/navigation-primary-style-two.php:204
+msgid "Search"
+msgstr ""
+
+#: ../template-parts/navigation/navigation-primary-style-two.php:122
+msgid "Social Menu"
+msgstr ""
+
+#: ../template-parts/navigation/navigation-social-top.php:14
+msgid "Social Links Menu"
+msgstr ""
+
+#: ../template-parts/special-offer/post-type-special.php:88
+msgid "Pages:"
+msgstr ""
+
+#: ../template-parts/special-offer/post-type-special.php:105
+#, php-format
+msgid "Edit %s"
+msgstr ""
