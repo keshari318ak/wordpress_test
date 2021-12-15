@@ -1,4 +1,4 @@
-name: dev-CI
+name: Dev-branch-CI
 on:
   push:
     branches: [ dev ]
