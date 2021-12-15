@@ -1,19 +1,12 @@
-name: Deploy to WP Engine
-on:
-  push:
-
+on: push
+name: Deploying WordPress Site
 jobs:
-  build:
-    runs-on: self-hosted  
-    steps: 
+  deploy:
+    name: Deploy
+    runs-on: self-hosted
+    steps:
     - uses: actions/checkout@v2
-    - name: GitHub Action Deploy to WP Engine
-      uses: wpengine/github-action-wpe-site-deploy@v2.3.3
-      with:
-      
-      # Deploy vars
-       # WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }} 
-      
-      # Branches & Environments 
-        PRD_BRANCH: main
-        #PRD_ENV: prodsitehere
+    - name: Deploy
+      uses: rtCamp/action-deploy-wordpress@v2
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
