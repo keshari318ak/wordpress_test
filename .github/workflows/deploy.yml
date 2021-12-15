@@ -15,5 +15,5 @@ jobs:
        # WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }} 
       
       # Branches & Environments 
-       # PRD_BRANCH: main
-       # PRD_ENV: prodsitehere
+        PRD_BRANCH: main
+        PRD_ENV: prodsitehere
