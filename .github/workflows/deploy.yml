@@ -1,12 +1,19 @@
-on: 
-   push:
-     branches: [ main ]
-name: Deploying WordPress Site
+name: Deploy to WordPress.org
+on:
+  push:
+    branches:
+    - refs/tags/*
 jobs:
-  build:
-    name: wordpress_test
-    runs-on: self-hosted
+  tag:
+    name: New tag
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: wordpress_test
-      uses: rtCamp/action-deploy-wordpress@v2
+    - uses: actions/checkout@master
+    - name: WordPress Plugin Deploy
+      uses: varunsridharan/action-wp-org-deploy@master
+      with:
+        WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}
+        WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
+        SLUG: my-super-cool-plugin
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
