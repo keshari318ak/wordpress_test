@@ -1,0 +1,14 @@
+name: CI
+on:
+  push:
+    branches: [ dev ]
+  #pull_requests:
+  #  branches: [ main ]
+
+#name: Deploying WordPress Site
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
