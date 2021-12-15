@@ -7,7 +7,7 @@ jobs:
     runs-on: self-hosted  
     steps: 
     - uses: actions/checkout@v2
-    - name: GitHub Action Deploy to WP Engine
+    #- name: GitHub Action Deploy to WP Engine
       uses: wpengine/github-action-wpe-site-deploy@v2.3.3
       with:
       
