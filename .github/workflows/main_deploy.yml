@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: pwd
-    - run: bash /home/ec2-user/actions-runner/main.sh >> ./wp-build/out.txt
+    - run: bash /home/ec2-user/actions-runner/main.sh >> /home/ec2-user/actions-runner/wp-build/out.txt
    # - name: Deploy
    #   uses: rtCamp/action-deploy-wordpress@v2
       #env:
