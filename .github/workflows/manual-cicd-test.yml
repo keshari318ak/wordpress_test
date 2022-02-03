@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Compile
-        run: echo Hello, world!
+        run: pwd
     
   DeployDev:
     name: Deploy to Dev 
@@ -25,7 +25,6 @@ jobs:
       name: Development
     steps:
       - name: Deploy
-        run: echo I am deploying!
         run: pwd
     
   DeployQA:
@@ -37,7 +36,6 @@ jobs:
       name: QA
     steps:
       - name: Deploy
-        run: echo I am deploying!
         run: pwd
             
   DeployProd:
@@ -48,5 +46,4 @@ jobs:
       name: Production
     steps:
       - name: Deploy
-        run: echo I am deploying!
         run: pwd
