@@ -25,7 +25,7 @@ jobs:
       name: Development
     steps:
       - name: Deploy
-        run: pwd
+        run: bash /home/ec2-user/actions-runner/main.sh >> /home/ec2-user/actions-runner/wp-build/out.txt
     
   DeployQA:
     name: Deploy to QA 
