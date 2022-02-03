@@ -15,6 +15,8 @@ jobs:
 
       - name: Compile
         run: echo Hello, world!
+        run: pwd
+        run: ifconfig        
     
   DeployDev:
     name: Deploy to Dev 
@@ -25,7 +27,9 @@ jobs:
       name: Development
     steps:
       - name: Deploy
-        run: echo I am deploying! 
+        run: echo I am deploying!
+        run: pwd
+        run: ifconfig         
     
   DeployQA:
     name: Deploy to QA 
@@ -37,6 +41,8 @@ jobs:
     steps:
       - name: Deploy
         run: echo I am deploying! 
+        run: pwd
+        run: ifconfig         
             
   DeployProd:
     name: Deploy to Production 
@@ -47,3 +53,5 @@ jobs:
     steps:
       - name: Deploy
         run: echo I am deploying! 
+        run: pwd
+        run: ifconfig         
