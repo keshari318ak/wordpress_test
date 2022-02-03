@@ -1,20 +1,20 @@
-name: Main-branch-CI
-on:
-  push:
-    branches: [ main ]
-  #pull_requests:
-  #  branches: [ main ]
-
-#name: Deploying WordPress Site
-jobs:
-  deploy:
-    name: Deploy
-    runs-on: self-hosted
-    steps:
-    - uses: actions/checkout@v2
-    - run: pwd
-    - run: bash /home/ec2-user/actions-runner/main.sh >> /home/ec2-user/actions-runner/wp-build/out.txt
-   # - name: Deploy
-   #   uses: rtCamp/action-deploy-wordpress@v2
-      #env:
+#name: Main-branch-CI
+#on:
+#  push:
+#    branches: [ main ]
+#  #pull_requests:
+#  #  branches: [ main ]
+#
+##name: Deploying WordPress Site
+#jobs:
+#  deploy:
+#    name: Deploy
+#    runs-on: self-hosted
+#    steps:
+#    - uses: actions/checkout@v2
+#    - run: pwd
+#    - run: bash /home/ec2-user/actions-runner/main.sh >> /home/ec2-user/actions-runner/wp-build/out.txt
+#   # - name: Deploy
+#   #   uses: rtCamp/action-deploy-wordpress@v2
+#      #env:
         #SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
