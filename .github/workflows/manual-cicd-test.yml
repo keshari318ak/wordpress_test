@@ -15,7 +15,6 @@ jobs:
 
       - name: Compile
         run: echo Hello, world!
-        run: pwd
     
   DeployDev:
     name: Deploy to Dev 
