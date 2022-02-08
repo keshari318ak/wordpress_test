@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Compile
+      - name: Connection validation
         run: pwd
     
   DeployDev:
@@ -25,18 +25,18 @@ jobs:
       name: Development
     steps:
       - name: Deploy
-        run: bash /home/ec2-user/actions-runner/main.sh >> /home/ec2-user/actions-runner/wp-build/out.txt
+        run: bash /home/ec2-user/actions-runner/devdeploy.sh
     
   DeployQA:
     name: Deploy to QA 
-    if: github.event.ref == 'refs/heads/main'
+    #if: github.event.ref == 'refs/heads/main'
     needs: [DeployDev]
     runs-on: self-hosted
     environment: 
       name: QA
     steps:
       - name: Deploy
-        run: pwd
+        run: bash /home/ec2-user/actions-runner/qadeploy.sh
         
   DeployProd:
     name: Deploy to Production 
@@ -46,4 +46,4 @@ jobs:
       name: Production
     steps:
       - name: Deploy
-        run: pwd
+        run: bash /home/ec2-user/actions-runner/proddeploy.sh
