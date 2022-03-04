@@ -27,7 +27,7 @@ jobs:
       - name: Deploy
         run: bash /home/ec2-user/actions-runner/devdeploy.sh
 
-    runs-on: self-hosted
+    runs-on: self-hosted-2
     environment: 
       name: Development
     steps:
