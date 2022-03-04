@@ -26,6 +26,13 @@ jobs:
     steps:
       - name: Deploy
         run: bash /home/ec2-user/actions-runner/devdeploy.sh
+
+    runs-on: self-hosted
+    environment: 
+      name: Development
+    steps:
+      - name: Deploy
+        run: echo "deploy on another DEV env ec2"
     
   DeployQA:
     name: Deploy to QA 
