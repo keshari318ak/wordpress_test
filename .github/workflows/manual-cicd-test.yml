@@ -9,7 +9,7 @@ on:
 
 jobs:
   Build:
-    runs-on: self-hosted-2
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
 
@@ -20,21 +20,12 @@ jobs:
     name: Deploy to Dev 
     #if: github.event_name == 'pull_request'
     needs: [Build]
-    runs-on: self-hosted-2
+    runs-on: self-hosted
     environment: 
       name: Development
     steps:
       - name: Deploy
-        run: echo "deploy on another DEV env ec2"
-
-  DeployDev-2:
-    name: Deploy to Dev on other ec2
-    runs-on: self-hosted-2
-    environment: 
-      name: Development
-    steps:
-      - name: Deploy
-        run: echo "deploy on another DEV env ec2"
+        run: pwd && ifconfig
     
   DeployQA:
     name: Deploy to QA 
